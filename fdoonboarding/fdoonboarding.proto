@@ -1,8 +1,7 @@
 syntax = "proto3";
 
-option go_package = "github.com/rishiraj-intel/grpc-go/fdoonboarding";
+option go_package = "github.com/rishiraj-intel/grpc-go";
 // Artifact & Node Endpoints towards Inventory Manager
-package fdoonboarding;
 service NodeArtifactServiceNB {
   rpc FdoOnboardingTo2Req(FdoOnboardingReq) returns (FdoOnboardingResponse) {}
 }
