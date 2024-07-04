@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	pb "github.com/rishiraj-intel/grpc-demo/protofile" // Import path for the generated Protobuf files
+	pb "github.com/rishiraj-intel/grpc-go/protofile" // Import path for the generated Protobuf files
 	"google.golang.org/grpc"
 )
 
