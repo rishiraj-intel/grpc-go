@@ -1,4 +1,4 @@
-package protofile;
+package fdoonboarding;
 
 import static io.grpc.MethodDescriptor.generateFullMethodName;
 
@@ -12,32 +12,32 @@ public final class NodeArtifactServiceNBGrpc {
 
   private NodeArtifactServiceNBGrpc() {}
 
-  public static final java.lang.String SERVICE_NAME = "protofile.NodeArtifactServiceNB";
+  public static final java.lang.String SERVICE_NAME = "fdoonboarding.NodeArtifactServiceNB";
 
   // Static method descriptors that strictly reflect the proto.
-  private static volatile io.grpc.MethodDescriptor<protofile.Fdoonboarding.FdoOnboardingReq,
-      protofile.Fdoonboarding.FdoOnboardingResponse> getFdoOnboardingTo2ReqMethod;
+  private static volatile io.grpc.MethodDescriptor<fdoonboarding.Fdoonboarding.FdoOnboardingReq,
+      fdoonboarding.Fdoonboarding.FdoOnboardingResponse> getFdoOnboardingTo2ReqMethod;
 
   @io.grpc.stub.annotations.RpcMethod(
       fullMethodName = SERVICE_NAME + '/' + "FdoOnboardingTo2Req",
-      requestType = protofile.Fdoonboarding.FdoOnboardingReq.class,
-      responseType = protofile.Fdoonboarding.FdoOnboardingResponse.class,
+      requestType = fdoonboarding.Fdoonboarding.FdoOnboardingReq.class,
+      responseType = fdoonboarding.Fdoonboarding.FdoOnboardingResponse.class,
       methodType = io.grpc.MethodDescriptor.MethodType.UNARY)
-  public static io.grpc.MethodDescriptor<protofile.Fdoonboarding.FdoOnboardingReq,
-      protofile.Fdoonboarding.FdoOnboardingResponse> getFdoOnboardingTo2ReqMethod() {
-    io.grpc.MethodDescriptor<protofile.Fdoonboarding.FdoOnboardingReq, protofile.Fdoonboarding.FdoOnboardingResponse> getFdoOnboardingTo2ReqMethod;
+  public static io.grpc.MethodDescriptor<fdoonboarding.Fdoonboarding.FdoOnboardingReq,
+      fdoonboarding.Fdoonboarding.FdoOnboardingResponse> getFdoOnboardingTo2ReqMethod() {
+    io.grpc.MethodDescriptor<fdoonboarding.Fdoonboarding.FdoOnboardingReq, fdoonboarding.Fdoonboarding.FdoOnboardingResponse> getFdoOnboardingTo2ReqMethod;
     if ((getFdoOnboardingTo2ReqMethod = NodeArtifactServiceNBGrpc.getFdoOnboardingTo2ReqMethod) == null) {
       synchronized (NodeArtifactServiceNBGrpc.class) {
         if ((getFdoOnboardingTo2ReqMethod = NodeArtifactServiceNBGrpc.getFdoOnboardingTo2ReqMethod) == null) {
           NodeArtifactServiceNBGrpc.getFdoOnboardingTo2ReqMethod = getFdoOnboardingTo2ReqMethod =
-              io.grpc.MethodDescriptor.<protofile.Fdoonboarding.FdoOnboardingReq, protofile.Fdoonboarding.FdoOnboardingResponse>newBuilder()
+              io.grpc.MethodDescriptor.<fdoonboarding.Fdoonboarding.FdoOnboardingReq, fdoonboarding.Fdoonboarding.FdoOnboardingResponse>newBuilder()
               .setType(io.grpc.MethodDescriptor.MethodType.UNARY)
               .setFullMethodName(generateFullMethodName(SERVICE_NAME, "FdoOnboardingTo2Req"))
               .setSampledToLocalTracing(true)
               .setRequestMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  protofile.Fdoonboarding.FdoOnboardingReq.getDefaultInstance()))
+                  fdoonboarding.Fdoonboarding.FdoOnboardingReq.getDefaultInstance()))
               .setResponseMarshaller(io.grpc.protobuf.ProtoUtils.marshaller(
-                  protofile.Fdoonboarding.FdoOnboardingResponse.getDefaultInstance()))
+                  fdoonboarding.Fdoonboarding.FdoOnboardingResponse.getDefaultInstance()))
               .setSchemaDescriptor(new NodeArtifactServiceNBMethodDescriptorSupplier("FdoOnboardingTo2Req"))
               .build();
         }
@@ -96,8 +96,8 @@ public final class NodeArtifactServiceNBGrpc {
 
     /**
      */
-    default void fdoOnboardingTo2Req(protofile.Fdoonboarding.FdoOnboardingReq request,
-        io.grpc.stub.StreamObserver<protofile.Fdoonboarding.FdoOnboardingResponse> responseObserver) {
+    default void fdoOnboardingTo2Req(fdoonboarding.Fdoonboarding.FdoOnboardingReq request,
+        io.grpc.stub.StreamObserver<fdoonboarding.Fdoonboarding.FdoOnboardingResponse> responseObserver) {
       io.grpc.stub.ServerCalls.asyncUnimplementedUnaryCall(getFdoOnboardingTo2ReqMethod(), responseObserver);
     }
   }
@@ -131,8 +131,8 @@ public final class NodeArtifactServiceNBGrpc {
 
     /**
      */
-    public void fdoOnboardingTo2Req(protofile.Fdoonboarding.FdoOnboardingReq request,
-        io.grpc.stub.StreamObserver<protofile.Fdoonboarding.FdoOnboardingResponse> responseObserver) {
+    public void fdoOnboardingTo2Req(fdoonboarding.Fdoonboarding.FdoOnboardingReq request,
+        io.grpc.stub.StreamObserver<fdoonboarding.Fdoonboarding.FdoOnboardingResponse> responseObserver) {
       io.grpc.stub.ClientCalls.asyncUnaryCall(
           getChannel().newCall(getFdoOnboardingTo2ReqMethod(), getCallOptions()), request, responseObserver);
     }
@@ -156,7 +156,7 @@ public final class NodeArtifactServiceNBGrpc {
 
     /**
      */
-    public protofile.Fdoonboarding.FdoOnboardingResponse fdoOnboardingTo2Req(protofile.Fdoonboarding.FdoOnboardingReq request) {
+    public fdoonboarding.Fdoonboarding.FdoOnboardingResponse fdoOnboardingTo2Req(fdoonboarding.Fdoonboarding.FdoOnboardingReq request) {
       return io.grpc.stub.ClientCalls.blockingUnaryCall(
           getChannel(), getFdoOnboardingTo2ReqMethod(), getCallOptions(), request);
     }
@@ -180,8 +180,8 @@ public final class NodeArtifactServiceNBGrpc {
 
     /**
      */
-    public com.google.common.util.concurrent.ListenableFuture<protofile.Fdoonboarding.FdoOnboardingResponse> fdoOnboardingTo2Req(
-        protofile.Fdoonboarding.FdoOnboardingReq request) {
+    public com.google.common.util.concurrent.ListenableFuture<fdoonboarding.Fdoonboarding.FdoOnboardingResponse> fdoOnboardingTo2Req(
+        fdoonboarding.Fdoonboarding.FdoOnboardingReq request) {
       return io.grpc.stub.ClientCalls.futureUnaryCall(
           getChannel().newCall(getFdoOnboardingTo2ReqMethod(), getCallOptions()), request);
     }
@@ -207,8 +207,8 @@ public final class NodeArtifactServiceNBGrpc {
     public void invoke(Req request, io.grpc.stub.StreamObserver<Resp> responseObserver) {
       switch (methodId) {
         case METHODID_FDO_ONBOARDING_TO2REQ:
-          serviceImpl.fdoOnboardingTo2Req((protofile.Fdoonboarding.FdoOnboardingReq) request,
-              (io.grpc.stub.StreamObserver<protofile.Fdoonboarding.FdoOnboardingResponse>) responseObserver);
+          serviceImpl.fdoOnboardingTo2Req((fdoonboarding.Fdoonboarding.FdoOnboardingReq) request,
+              (io.grpc.stub.StreamObserver<fdoonboarding.Fdoonboarding.FdoOnboardingResponse>) responseObserver);
           break;
         default:
           throw new AssertionError();
@@ -232,8 +232,8 @@ public final class NodeArtifactServiceNBGrpc {
           getFdoOnboardingTo2ReqMethod(),
           io.grpc.stub.ServerCalls.asyncUnaryCall(
             new MethodHandlers<
-              protofile.Fdoonboarding.FdoOnboardingReq,
-              protofile.Fdoonboarding.FdoOnboardingResponse>(
+              fdoonboarding.Fdoonboarding.FdoOnboardingReq,
+              fdoonboarding.Fdoonboarding.FdoOnboardingResponse>(
                 service, METHODID_FDO_ONBOARDING_TO2REQ)))
         .build();
   }
@@ -244,7 +244,7 @@ public final class NodeArtifactServiceNBGrpc {
 
     @java.lang.Override
     public com.google.protobuf.Descriptors.FileDescriptor getFileDescriptor() {
-      return protofile.Fdoonboarding.getDescriptor();
+      return fdoonboarding.Fdoonboarding.getDescriptor();
     }
 
     @java.lang.Override
